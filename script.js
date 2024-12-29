@@ -1,4 +1,4 @@
-let calorieGoal = 2000;
+let calorieGoal = 3000;
         let currentCalories = 0;
         let meals = [];
 
