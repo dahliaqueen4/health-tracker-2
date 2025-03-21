@@ -13,14 +13,15 @@
             <button id="setGoalButton" onclick="navigateToPage('setGoalPage')">Set Calorie Goal</button>
             <button id="logMealButton" onclick="navigateToPage('logMealPage')">Log Meal</button>
             <button id="dailyReportButton" onclick="navigateToPage('dailyReportPage')">Daily Report</button>
+            <button id="downloadDataButton" onclick="downloadData()">Download Data</button>
         </div>
         <div id="content">
             <!-- Dynamic content will be loaded here -->
+            <canvas id="calorieTrendChart" style="max-width: 800px; margin: 20px auto;"></canvas>
         </div>
     </div>
     <div class="confetti" id="confetti"></div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
 
+    <!-- Include Chart.js and the Annotation Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.0.1/dist/chartjs-plugin-annotation.min.js"></script>
